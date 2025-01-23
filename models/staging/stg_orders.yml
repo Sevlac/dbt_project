@@ -4,6 +4,15 @@ models:
     - name: stg_orders
       columns:
         - name: customer_id
+          tests:
+            - not_null
+            - unique
         - name: customer_name
+          tests:
+            - not_null
         - name: order_date
+          tests:
+            - not_null
         - name: store_id
+          tests:
+            - not_null
